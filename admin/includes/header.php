@@ -7,7 +7,7 @@
   
   <title>Website Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../css/styles.css" type="text/css" rel="stylesheet">
+  <link href="styles.css" type="text/css" rel="stylesheet">
   <script async defer src="https://kit.fontawesome.com/08690c32d6.js" crossorigin="anonymous"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
   
