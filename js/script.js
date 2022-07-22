@@ -114,7 +114,8 @@ window.setTimeout(function () {
 
 
 // handle form submit
-$('#submit-button').click(function () {
+$('#contact-form').bind('submit', function (e) {
+  e.preventDefault();
   var name = $('#name').val();
   var email = $('#email').val();
   var message = $('#message').val();
@@ -130,6 +131,9 @@ $('#submit-button').click(function () {
       message: message
     },
     success: function (msg) {
+      // var message = document.getElementById('message-alert');
+      // message.innerHTML = 'Message Sent!';
+      $('#contact-form')[0].reset();
       alert('Message Sent!');
     }
   });

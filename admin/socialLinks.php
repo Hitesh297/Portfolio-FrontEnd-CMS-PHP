@@ -40,7 +40,6 @@ $result = mysqli_query( $connect, $query );
     <th align="center">Sequence</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
   <?php while( $record = mysqli_fetch_assoc( $result ) ): ?>
     <tr>
@@ -52,7 +51,6 @@ $result = mysqli_query( $connect, $query );
         <?php echo htmlentities( $record['url'] ); ?>
       </td>
       <td align="center"><?php echo $record['sequence']; ?></td>
-      <td align="center"><a href="socialLinks_photo.php?id=<?php echo $record['id']; ?>">Photo</i></a></td>
       <td align="center"><a href="socialLinks_edit.php?id=<?php echo $record['id']; ?>">Edit</i></a></td>
       <td align="center">
         <a href="socialLinks.php?delete=<?php echo $record['id']; ?>" onclick="javascript:confirm('Are you sure you want to delete this social media link?');">Delete</i></a>

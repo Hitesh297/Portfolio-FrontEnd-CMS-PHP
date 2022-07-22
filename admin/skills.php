@@ -40,7 +40,6 @@ $result = mysqli_query( $connect, $query );
     <th align="center">Sequence</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
   <?php while( $record = mysqli_fetch_assoc( $result ) ): ?>
     <tr>
@@ -55,7 +54,7 @@ $result = mysqli_query( $connect, $query );
         <small><?php echo $record['details']; ?></small>
       </td>
       <td align="center"><?php echo $record['sequence']; ?></td>
-      <td align="center"><a href="skills_photo.php?id=<?php echo $record['id']; ?>">Photo</i></a></td>
+      
       <td align="center"><a href="skills_edit.php?id=<?php echo $record['id']; ?>">Edit</i></a></td>
       <td align="center">
         <a href="skills.php?delete=<?php echo $record['id']; ?>" onclick="javascript:confirm('Are you sure you want to delete this project?');">Delete</i></a>

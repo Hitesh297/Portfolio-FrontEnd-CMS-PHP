@@ -313,6 +313,7 @@ include('admin/includes/functions.php');
                     <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
                     <textarea class="form-control" rows="10" id="message" placeholder="MESSAGE" name="message" required></textarea>
                     <input id="submit-button" type="submit" value="Submit">
+                    
                 </form>
             </div>
         </section>
