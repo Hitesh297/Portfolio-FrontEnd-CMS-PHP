@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 :root {
-    --green: #64ffda;
-    --background: #0a192f;
+    --green: #64cdff;
+    --background: #141517;
     --dark-slate: #495670;
+    --project-background: #161a21;
 }
 
 html {
@@ -41,7 +42,7 @@ html {
 }
 
 .loader-rectangle {
-    stroke: #64ffda;
+    stroke: var(--green);
     stroke-width: 5px;
     fill: none;
 }
@@ -79,7 +80,7 @@ html {
 
 #logo-svg text {
     font-family: 'Merriweather', serif;
-    fill: #64ffda;
+    fill: var(--green);
     animation: fadein 0.5s linear 2s;
     -webkit-animation: fadein 0.5s linear 2s;
     -moz-animation: fadein 0.5s linear 2s;
@@ -160,7 +161,7 @@ p {
     width: 100%;
     height: 100px;
     position: fixed;
-    background-color: rgba(10, 25, 47, 0.85);
+    background-color: var(--background);
     align-items: center;
     justify-content: space-between;
     top: 0px;
@@ -469,8 +470,8 @@ a {
 
 
 #hero-section #hire-me {
-    color: #64ffda;
-    border: 1px solid #64ffda;
+    color: var(--green);
+    border: 1px solid var(--green);
     border-radius: 4px;
     padding: 1em 1em;
     font-size: 14px;
@@ -725,8 +726,8 @@ section {
 
 
 .project-details {
-    background-color: #112240;
-    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    background-color: var(--project-background);
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.7);
     padding: 25px;
     border-radius: 4px;
     font-size: 1rem;
@@ -734,7 +735,7 @@ section {
 }
 
 .project-details:hover {
-    box-shadow: 0 10px 30px 5px rgba(2, 12, 27, 0.7);
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.7);
 }
 
 .project-details p {
@@ -890,7 +891,7 @@ section {
     letter-spacing: 1px;
     border: none;
     border-radius: 4px;
-    background-color: #112240;
+    background-color: var(--project-background);
     padding: 6px 12px;
     font-family: 'Roboto Mono', monospace;
     max-width: 800px;

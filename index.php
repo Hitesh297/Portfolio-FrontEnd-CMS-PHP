@@ -17,7 +17,8 @@ include('admin/includes/functions.php');
     <script async defer src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hitesh Patel</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.svg">
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
 </head>
 
 <body>
