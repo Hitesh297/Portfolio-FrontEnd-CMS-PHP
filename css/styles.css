@@ -55,7 +55,7 @@ html {
     left: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     background-color: var(--background);
     z-index: 12;
     animation: fadeout 1s 3.5s;
@@ -309,7 +309,8 @@ ul li {
 
 .nav-links li a::before {
     counter-increment: item;
-    content: "0" counter(item) ".";
+    /* content: "0" counter(item) "."; */
+    content: "->";
     margin-right: 5px;
     color: var(--green);
     font-size: 12px;

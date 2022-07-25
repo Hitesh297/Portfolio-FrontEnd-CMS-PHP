@@ -87,7 +87,7 @@ include('admin/includes/functions.php');
         <ul id="left-list">
         <?php while ($socialMediaLink = mysqli_fetch_assoc($result)) : ?>
             <li>
-                <a class="social" href="<?php echo $socialMediaLink['url']; ?>">
+                <a class="social" href="<?php echo $socialMediaLink['url']; ?>" target="_blank">
                 <?php echo $socialMediaLink['logo']; ?>
                 </a>
             </li>
