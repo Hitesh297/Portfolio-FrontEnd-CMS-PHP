@@ -204,7 +204,7 @@ ul li {
 }
 
 #hamburger svg {
-    fill: #64ffda;
+    fill: var(--green);
 }
 
 #right-menu {
@@ -219,8 +219,8 @@ ul li {
     width: min(75vw, 400px);
     /*change size according to window size*/
     height: 100vh;
-    background-color: #112240;
-    box-shadow: -10px 0px 30px -15px #112240;
+    background-color: var(--project-background);
+    box-shadow: -10px 0px 30px -15px var(--project-background);
     z-index: 9;
     transform: translateX(100vw);
     /*make it zero when hambuger icon is clicked*/
